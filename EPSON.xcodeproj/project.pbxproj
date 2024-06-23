@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F10B4BB2C1559DB00E4047F /* EPSONApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10B4BA2C1559DB00E4047F /* EPSONApp.swift */; };
+		2F10B4BD2C1559DB00E4047F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10B4BC2C1559DB00E4047F /* RootView.swift */; };
+		2F10B4BF2C1559DC00E4047F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F10B4BE2C1559DC00E4047F /* Assets.xcassets */; };
+		2F10B4C22C1559DC00E4047F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F10B4C12C1559DC00E4047F /* Preview Assets.xcassets */; };
+		2F10B4D32C155BCB00E4047F /* LabeledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10B4D22C155BCB00E4047F /* LabeledView.swift */; };
+		2F10B4D72C155E2500E4047F /* ConnectPrinterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10B4D62C155E2500E4047F /* ConnectPrinterView.swift */; };
+		2F10B4D92C155E3E00E4047F /* RecordingRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10B4D82C155E3E00E4047F /* RecordingRootView.swift */; };
+		2F10B4DE2C1560FE00E4047F /* BaseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10B4DD2C1560FE00E4047F /* BaseButtonStyle.swift */; };
+		2F10B4E02C15690700E4047F /* ConnectingPrinterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10B4DF2C15690700E4047F /* ConnectingPrinterView.swift */; };
+		2F1334E22C240C6D001780CF /* CancelRecordingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334E12C240C6D001780CF /* CancelRecordingButton.swift */; };
+		2F1334E42C240CA8001780CF /* RecordReviewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334E32C240CA8001780CF /* RecordReviewToolbar.swift */; };
+		2F1334E62C240CEF001780CF /* RecordingToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334E52C240CEF001780CF /* RecordingToolbar.swift */; };
+		2F1334E92C240DF3001780CF /* GenerationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334E82C240DF3001780CF /* GenerationRootView.swift */; };
+		2F1334EB2C240E24001780CF /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334EA2C240E24001780CF /* Requests.swift */; };
+		2F1334ED2C2413D5001780CF /* GenerationResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334EC2C2413D5001780CF /* GenerationResultView.swift */; };
+		2F1334F02C24150A001780CF /* MarkupEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 2F1334EF2C24150A001780CF /* MarkupEditor */; };
+		2F1334F22C241B06001780CF /* GenerationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334F12C241B06001780CF /* GenerationResultViewModel.swift */; };
+		2F1334F42C241F3A001780CF /* PrintPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334F32C241F3A001780CF /* PrintPreviewView.swift */; };
+		2F1334F62C2426A3001780CF /* HTMLViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1334F52C2426A3001780CF /* HTMLViewer.swift */; };
+		2F2675A82C211BAF00CB1271 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2675A72C211BAF00CB1271 /* Constants.swift */; };
+		2F76C4442C22FECC008C6B5E /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F76C4432C22FECC008C6B5E /* SpeechRecognizer.swift */; };
+		2F76C4462C2316DE008C6B5E /* RecordReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F76C4452C2316DE008C6B5E /* RecordReviewView.swift */; };
+		2FA267242C2472A400D4278E /* PrintButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA267232C2472A400D4278E /* PrintButton.swift */; };
+		2FA267262C24767B00D4278E /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA267252C24767B00D4278E /* Dialog.swift */; };
+		2FCD77342C21C975001BB8C4 /* RecordSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD77332C21C975001BB8C4 /* RecordSampleView.swift */; };
+		2FCD77362C21C9BF001BB8C4 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD77352C21C9BF001BB8C4 /* RecordingView.swift */; };
+		2FE414952C200A48000CAD17 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE414942C200A48000CAD17 /* ChatBubble.swift */; };
+		2FF1FF542C271EE00036F351 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1FF532C271EE00036F351 /* DTO.swift */; };
+		2FF3FCDF2C28314D0086C30B /* PrintProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF3FCDE2C28314D0086C30B /* PrintProgress.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F10B4B72C1559DB00E4047F /* EPSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F10B4BA2C1559DB00E4047F /* EPSONApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPSONApp.swift; sourceTree = "<group>"; };
+		2F10B4BC2C1559DB00E4047F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2F10B4BE2C1559DC00E4047F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F10B4C12C1559DC00E4047F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F10B4D22C155BCB00E4047F /* LabeledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledView.swift; sourceTree = "<group>"; };
+		2F10B4D62C155E2500E4047F /* ConnectPrinterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectPrinterView.swift; sourceTree = "<group>"; };
+		2F10B4D82C155E3E00E4047F /* RecordingRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingRootView.swift; sourceTree = "<group>"; };
+		2F10B4DD2C1560FE00E4047F /* BaseButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButtonStyle.swift; sourceTree = "<group>"; };
+		2F10B4DF2C15690700E4047F /* ConnectingPrinterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingPrinterView.swift; sourceTree = "<group>"; };
+		2F1334E12C240C6D001780CF /* CancelRecordingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelRecordingButton.swift; sourceTree = "<group>"; };
+		2F1334E32C240CA8001780CF /* RecordReviewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordReviewToolbar.swift; sourceTree = "<group>"; };
+		2F1334E52C240CEF001780CF /* RecordingToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingToolbar.swift; sourceTree = "<group>"; };
+		2F1334E82C240DF3001780CF /* GenerationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationRootView.swift; sourceTree = "<group>"; };
+		2F1334EA2C240E24001780CF /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		2F1334EC2C2413D5001780CF /* GenerationResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationResultView.swift; sourceTree = "<group>"; };
+		2F1334F12C241B06001780CF /* GenerationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationResultViewModel.swift; sourceTree = "<group>"; };
+		2F1334F32C241F3A001780CF /* PrintPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintPreviewView.swift; sourceTree = "<group>"; };
+		2F1334F52C2426A3001780CF /* HTMLViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLViewer.swift; sourceTree = "<group>"; };
+		2F2675A72C211BAF00CB1271 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F76C4432C22FECC008C6B5E /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		2F76C4452C2316DE008C6B5E /* RecordReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordReviewView.swift; sourceTree = "<group>"; };
+		2FA267232C2472A400D4278E /* PrintButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintButton.swift; sourceTree = "<group>"; };
+		2FA267252C24767B00D4278E /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		2FCD77332C21C975001BB8C4 /* RecordSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSampleView.swift; sourceTree = "<group>"; };
+		2FCD77352C21C9BF001BB8C4 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		2FE414942C200A48000CAD17 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		2FF1FF532C271EE00036F351 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		2FF1FF552C2721C40036F351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2FF3FCDE2C28314D0086C30B /* PrintProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintProgress.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F10B4B42C1559DB00E4047F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1334F02C24150A001780CF /* MarkupEditor in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F10B4AE2C1559DB00E4047F = {
+			isa = PBXGroup;
+			children = (
+				2F10B4B92C1559DB00E4047F /* EPSON */,
+				2F10B4B82C1559DB00E4047F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F10B4B82C1559DB00E4047F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F10B4B72C1559DB00E4047F /* EPSON.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F10B4B92C1559DB00E4047F /* EPSON */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1FF552C2721C40036F351 /* Info.plist */,
+				2F76C4422C22FEC2008C6B5E /* Domain */,
+				2F10B4CB2C155A7900E4047F /* App */,
+				2F10B4D12C155BC200E4047F /* Components */,
+				2F10B4CA2C155A7200E4047F /* View */,
+				2F10B4DA2C155E8E00E4047F /* API */,
+				2F10B4C02C1559DC00E4047F /* Preview Content */,
+			);
+			path = EPSON;
+			sourceTree = "<group>";
+		};
+		2F10B4C02C1559DC00E4047F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2F10B4C12C1559DC00E4047F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F10B4CA2C155A7200E4047F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F1334E72C240DEE001780CF /* Generation */,
+				2F10B4D52C155E0E00E4047F /* Recording */,
+				2F10B4D42C155E0400E4047F /* PrintConnection */,
+				2F10B4BC2C1559DB00E4047F /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F10B4CB2C155A7900E4047F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2F10B4BE2C1559DC00E4047F /* Assets.xcassets */,
+				2F10B4BA2C1559DB00E4047F /* EPSONApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2F10B4D12C155BC200E4047F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F2675A72C211BAF00CB1271 /* Constants.swift */,
+				2F10B4D22C155BCB00E4047F /* LabeledView.swift */,
+				2F10B4DD2C1560FE00E4047F /* BaseButtonStyle.swift */,
+				2F1334F52C2426A3001780CF /* HTMLViewer.swift */,
+				2FA267252C24767B00D4278E /* Dialog.swift */,
+				2FE414942C200A48000CAD17 /* ChatBubble.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2F10B4D42C155E0400E4047F /* PrintConnection */ = {
+			isa = PBXGroup;
+			children = (
+				2F10B4D62C155E2500E4047F /* ConnectPrinterView.swift */,
+				2F10B4DF2C15690700E4047F /* ConnectingPrinterView.swift */,
+			);
+			path = PrintConnection;
+			sourceTree = "<group>";
+		};
+		2F10B4D52C155E0E00E4047F /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				2F1334E02C240C64001780CF /* Components */,
+				2F10B4D82C155E3E00E4047F /* RecordingRootView.swift */,
+				2FCD77332C21C975001BB8C4 /* RecordSampleView.swift */,
+				2FCD77352C21C9BF001BB8C4 /* RecordingView.swift */,
+				2F76C4452C2316DE008C6B5E /* RecordReviewView.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		2F10B4DA2C155E8E00E4047F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2F1334EA2C240E24001780CF /* Requests.swift */,
+				2FF1FF532C271EE00036F351 /* DTO.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2F1334E02C240C64001780CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F1334E12C240C6D001780CF /* CancelRecordingButton.swift */,
+				2F1334E32C240CA8001780CF /* RecordReviewToolbar.swift */,
+				2F1334E52C240CEF001780CF /* RecordingToolbar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2F1334E72C240DEE001780CF /* Generation */ = {
+			isa = PBXGroup;
+			children = (
+				2F1334E82C240DF3001780CF /* GenerationRootView.swift */,
+				2F1334EC2C2413D5001780CF /* GenerationResultView.swift */,
+				2F1334F12C241B06001780CF /* GenerationResultViewModel.swift */,
+				2F1334F32C241F3A001780CF /* PrintPreviewView.swift */,
+				2FA267232C2472A400D4278E /* PrintButton.swift */,
+				2FF3FCDE2C28314D0086C30B /* PrintProgress.swift */,
+			);
+			path = Generation;
+			sourceTree = "<group>";
+		};
+		2F76C4422C22FEC2008C6B5E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2F76C4432C22FECC008C6B5E /* SpeechRecognizer.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F10B4B62C1559DB00E4047F /* EPSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F10B4C52C1559DC00E4047F /* Build configuration list for PBXNativeTarget "EPSON" */;
+			buildPhases = (
+				2F10B4B32C1559DB00E4047F /* Sources */,
+				2F10B4B42C1559DB00E4047F /* Frameworks */,
+				2F10B4B52C1559DB00E4047F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPSON;
+			packageProductDependencies = (
+				2F1334EF2C24150A001780CF /* MarkupEditor */,
+			);
+			productName = EPSON;
+			productReference = 2F10B4B72C1559DB00E4047F /* EPSON.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F10B4AF2C1559DB00E4047F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					2F10B4B62C1559DB00E4047F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 2F10B4B22C1559DB00E4047F /* Build configuration list for PBXProject "EPSON" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F10B4AE2C1559DB00E4047F;
+			packageReferences = (
+				2F1334EE2C241509001780CF /* XCRemoteSwiftPackageReference "MarkupEditor" */,
+			);
+			productRefGroup = 2F10B4B82C1559DB00E4047F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F10B4B62C1559DB00E4047F /* EPSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F10B4B52C1559DB00E4047F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F10B4C22C1559DC00E4047F /* Preview Assets.xcassets in Resources */,
+				2F10B4BF2C1559DC00E4047F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F10B4B32C1559DB00E4047F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1334F42C241F3A001780CF /* PrintPreviewView.swift in Sources */,
+				2FA267262C24767B00D4278E /* Dialog.swift in Sources */,
+				2F10B4D72C155E2500E4047F /* ConnectPrinterView.swift in Sources */,
+				2F76C4462C2316DE008C6B5E /* RecordReviewView.swift in Sources */,
+				2FE414952C200A48000CAD17 /* ChatBubble.swift in Sources */,
+				2FCD77362C21C9BF001BB8C4 /* RecordingView.swift in Sources */,
+				2F10B4D92C155E3E00E4047F /* RecordingRootView.swift in Sources */,
+				2F10B4BD2C1559DB00E4047F /* RootView.swift in Sources */,
+				2F1334E92C240DF3001780CF /* GenerationRootView.swift in Sources */,
+				2F1334ED2C2413D5001780CF /* GenerationResultView.swift in Sources */,
+				2F10B4DE2C1560FE00E4047F /* BaseButtonStyle.swift in Sources */,
+				2F2675A82C211BAF00CB1271 /* Constants.swift in Sources */,
+				2FF3FCDF2C28314D0086C30B /* PrintProgress.swift in Sources */,
+				2F1334E42C240CA8001780CF /* RecordReviewToolbar.swift in Sources */,
+				2F10B4BB2C1559DB00E4047F /* EPSONApp.swift in Sources */,
+				2FCD77342C21C975001BB8C4 /* RecordSampleView.swift in Sources */,
+				2F1334EB2C240E24001780CF /* Requests.swift in Sources */,
+				2F1334E22C240C6D001780CF /* CancelRecordingButton.swift in Sources */,
+				2F1334F22C241B06001780CF /* GenerationResultViewModel.swift in Sources */,
+				2F10B4E02C15690700E4047F /* ConnectingPrinterView.swift in Sources */,
+				2FF1FF542C271EE00036F351 /* DTO.swift in Sources */,
+				2F76C4442C22FECC008C6B5E /* SpeechRecognizer.swift in Sources */,
+				2F1334F62C2426A3001780CF /* HTMLViewer.swift in Sources */,
+				2F10B4D32C155BCB00E4047F /* LabeledView.swift in Sources */,
+				2FA267242C2472A400D4278E /* PrintButton.swift in Sources */,
+				2F1334E62C240CEF001780CF /* RecordingToolbar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2F10B4C32C1559DC00E4047F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F10B4C42C1559DC00E4047F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F10B4C62C1559DC00E4047F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EPSON/Preview Content\"";
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EPSON/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "음성을 기록하기 위해 마이크 권한을 요청합니다.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "음성을 텍스트로 변환하기 위해 음성인식 권한을 요청합니다.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.EPSON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F10B4C72C1559DC00E4047F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EPSON/Preview Content\"";
+				DEVELOPMENT_TEAM = GTB6BR222W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EPSON/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "음성을 기록하기 위해 마이크 권한을 요청합니다.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "음성을 텍스트로 변환하기 위해 음성인식 권한을 요청합니다.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.EPSON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F10B4B22C1559DB00E4047F /* Build configuration list for PBXProject "EPSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F10B4C32C1559DC00E4047F /* Debug */,
+				2F10B4C42C1559DC00E4047F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F10B4C52C1559DC00E4047F /* Build configuration list for PBXNativeTarget "EPSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F10B4C62C1559DC00E4047F /* Debug */,
+				2F10B4C72C1559DC00E4047F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F1334EE2C241509001780CF /* XCRemoteSwiftPackageReference "MarkupEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stevengharris/MarkupEditor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F1334EF2C24150A001780CF /* MarkupEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F1334EE2C241509001780CF /* XCRemoteSwiftPackageReference "MarkupEditor" */;
+			productName = MarkupEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2F10B4AF2C1559DB00E4047F /* Project object */;
+}
